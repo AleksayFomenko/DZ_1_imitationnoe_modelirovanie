@@ -11,7 +11,7 @@ graph_kz = []
 graph_Mn = []
 lambbda = 2.5
 mu = 1.09
-for n in range(5,kol_kanalov+1):
+for n in range(1,kol_kanalov+1):
     graph_n.append(n)
     print(f'Кол-во каналов - {n}:')
     znam = 0
@@ -36,7 +36,7 @@ for n in range(5,kol_kanalov+1):
     kz = Mn/n
     graph_kz.append(kz)
     print(f'Коэфф. нагруж. = {kz}')
-'''plt.plot(graph_n, graph_otk)
+plt.plot(graph_n, graph_otk)
 plt.xlabel("n")
 plt.ylabel("Pотк")
 plt.grid()
@@ -50,4 +50,4 @@ plt.plot(graph_n, graph_kz)
 plt.xlabel("n")
 plt.ylabel("kз")
 plt.grid()
-plt.show()'''
+plt.show()
